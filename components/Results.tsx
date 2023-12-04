@@ -86,9 +86,7 @@ export default function Results() {
         {!loading &&
           posts.map((post, index) => (
             <Card className={classes.card} key={index}>
-              <AspectRatio ratio={3 / 2}>
                 <Media key={post.id} {...post} index={index} />
-              </AspectRatio>
               <Card.Section p="md">
                 <Anchor className={classes.title} href={post.permalink} mt={8}>
                   {post.title}
